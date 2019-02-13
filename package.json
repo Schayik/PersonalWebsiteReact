@@ -11,7 +11,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "local": "npm-run-all -p watch-css start",
+    "build-css": "stylus -c src/styles/stylus/ --out src/styles/css",
+    "watch-css": "yarn run build-css && stylus -c -w src/styles/stylus --out src/styles/css"
   },
   "eslintConfig": {
     "extends": "react-app"
