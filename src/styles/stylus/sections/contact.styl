@@ -1,0 +1,32 @@
+
+.contact-wrapper
+    display: flex
+    justify-content: space-between
+
+    .contact-item
+        height: 400px
+        width: 400px * .866
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
+        &.black-text
+            h4, a
+                color: $black
+        h4, a
+            line-height: 40px
+            font-size: 40px
+        h4
+            margin-top: 40px
+            font-weight: 500
+        a
+            text-align: center
+            span
+                display: block

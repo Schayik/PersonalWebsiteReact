@@ -1,0 +1,26 @@
+
+.navbar-full-width
+    background-color: $black
+    border-bottom: 4px $orange solid
+    position: fixed
+    width: 100%
+    z-index: 1
+
+    .navbar-content
+        height: 64px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            text-transform: uppercase
+            font-size: 32px
+            span
+                color: $orange
+        ul
+            display: flex
+            a
+                margin-right: 24px
+                &:last-child
+                    margin-right: 0
+                &:hover
+                    color: darken($white, 15%)
